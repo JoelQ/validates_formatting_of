@@ -40,9 +40,9 @@ You can still add the following options when using `validates_formatting_of`:
       validates_formatting_of :email, :using => :email
     end
 
-A valid email consists of at least one alphanumeric or special character (!#$%^&*-_=+`~)
+A valid email consists of at least one alphanumeric or special character (!#$%^&*-_=+`~|), followed by an @ symbol, followed by at least one alphanumeric character or the - symbol, followed by a period (.) followed by two to four alphabetic characters. All characters are case-insensitive.
     
-#### Example
+#### Examples
 
     person@example.net  #=> valid
     name-5@abc.co       #=> valid
