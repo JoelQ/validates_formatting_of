@@ -61,6 +61,19 @@ A valid email consists of at least one alphanumeric or special character (!#$%^&
     class Sites < ActiveRecord::Base
       validates_formatting_of :website, :using => :url
     end
+    
+A valid url starts with either `http://` or `https://`, followed by a least one alphanumeric or or dash (-) character, followed by a period (.), followed by at least one alphanumeric or dash (-) character.
+
+#### Examples
+
+    http://abc.com              #=> valid
+    https://abc.com             #=> valid
+    http://1.-                  #=> valid
+    http://sub.domain.longname  #=> valid
+
+    abcd                        #=> invalid
+    http://.co                  #=> invalid
+
 
 ### Alpha
 
