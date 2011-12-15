@@ -40,13 +40,18 @@ You can still add the following options when using `validates_formatting_of`:
       validates_formatting_of :email, :using => :email
     end
 
+A valid email consists of at least one alphanumeric or special character (!#$%^&*-_=+`~)
+    
+#### Example
+
+    person@example.net  #=> valid
+    name-5@abc.co       #=> valid
+
 ### URL
 
     class Sites < ActiveRecord::Base
       validates_formatting_of :website, :using => :url
     end
-
-#### Example
 
 ### Alpha
 
