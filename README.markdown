@@ -46,6 +46,8 @@ You can still add the following options when using `validates_formatting_of`:
       validates_formatting_of :website, :using => :url
     end
 
+#### Example
+
 ### Alpha
 
     class Name < ActiveRecord::Base
