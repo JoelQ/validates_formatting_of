@@ -44,8 +44,17 @@ A valid email consists of at least one alphanumeric or special character (!#$%^&
     
 #### Examples
 
-    person@example.net  #=> valid
-    name-5@abc.co       #=> valid
+    person@example.net    #=> valid
+    name-5@abc.co         #=> valid
+    a@b.cd                #=> valid
+    !#$%^&*-+@abc35.code  #=> valid
+    
+    abcd                  #=> invalid
+    abc@mega$$$.com       #=> invalid
+    abc@de.f              #=> invalid
+    abc@de.fghij          #=> invalid
+    abc@de.fg22           #=> invalid
+    
 
 ### URL
 
